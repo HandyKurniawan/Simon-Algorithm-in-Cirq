@@ -1,8 +1,6 @@
 # Simon-Algorithm-in-Cirq
 An implementation of Simon's Algorithm using Google Quantum AI - Cirq.
 
-This is a report for [LTAT.00.008 Theoretical Informatics Project] course in the University of Tartu.
-
 Link to the implementation in Google Colab: [Cirq Simon's Algorithm](https://colab.research.google.com/drive/1JDirSZv9dL2awlqEfiZWK0S38WaAmVT4?usp=sharing)
 
 Reference: [Qiskit Simon's Algorithm](https://qiskit.org/textbook/ch-algorithms/simon.html)
