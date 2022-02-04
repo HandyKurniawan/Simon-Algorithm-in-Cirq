@@ -40,7 +40,7 @@ Given this blackbox <img align="center" src="https://render.githubusercontent.co
 
 #### Classical Solution
 
-Classically, if we want to know what <img src="https://render.githubusercontent.com/render/math?math=b"> is with 100% certainty for a given <img align="center" src="https://render.githubusercontent.com/render/math?math=f">, we have to check up to <img align="center" src="https://render.githubusercontent.com/render/math?math=2^{n-1} + 1">  inputs, where n is the number of bits in the input. This means checking just over half of all the possible inputs until we find two cases of the same output. Much like the Deutsch-Jozsa problem, if we get lucky, we could solve the problem with our first two tries. But if we happen to get an <img align="center" src="https://render.githubusercontent.com/render/math?math=f"> that is one-to-one, or get _really_ unlucky with an <img align="center" src="https://render.githubusercontent.com/render/math?math=f"> that’s two-to-one, then we’re stuck with the full <img src="https://render.githubusercontent.com/render/math?math=2^{n−1}+1">.
+Classically, if we want to know what <img src="https://render.githubusercontent.com/render/math?math=b"> is with 100% certainty for a given <img align="center" src="https://render.githubusercontent.com/render/math?math=f">, we have to check up to <img align="center" src="https://render.githubusercontent.com/render/math?math=2^{n-1}"> + 1  inputs, where n is the number of bits in the input. This means checking just over half of all the possible inputs until we find two cases of the same output. Much like the Deutsch-Jozsa problem, if we get lucky, we could solve the problem with our first two tries. But if we happen to get an <img align="center" src="https://render.githubusercontent.com/render/math?math=f"> that is one-to-one, or get _really_ unlucky with an <img align="center" src="https://render.githubusercontent.com/render/math?math=f"> that’s two-to-one, then we’re stuck with the full <img src="https://render.githubusercontent.com/render/math?math=2^{n-1}"> + 1.
 There are known algorithms that have a lower bound of <img align="center" src="https://render.githubusercontent.com/render/math?math=\Omega(2^{n/2})"> (see Reference 2 below), but generally speaking the complexity grows exponentially with <img src="https://render.githubusercontent.com/render/math?math=n">.
 
 #### Quantum Solution
@@ -55,7 +55,7 @@ Where the query function, <img src="https://render.githubusercontent.com/render/
 <img src="https://render.githubusercontent.com/render/math?math=\lvert x \rangle \lvert a \rangle \rightarrow \lvert x \rangle \lvert a \oplus f(x) \rangle">
 </p>
   
-In the specific case that the second register is in the state $|0\rangle = |00\dots0\rangle$ we have:
+In the specific case that the second register is in the state <img src="https://render.githubusercontent.com/render/math?math=|0\rangle = |00\dots0\rangle"> we have:
 
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\lvert x \rangle \lvert 0 \rangle \rightarrow \lvert x \rangle \lvert f(x) \rangle">
